@@ -1,0 +1,398 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Helper Classes */
+
+.color-primary {
+  color: #28a3a1;
+}
+
+.background-primary {
+  background-color: #28a3a1;
+  color: #f4f4f4;
+}
+
+.background-secondary {
+  background-color: #555555;
+  color: #f4f4f4;
+}
+
+.color-secondary {
+  color: #f4f4f4;
+}
+
+.background-darker {
+  background-color: #f4fafa;
+}
+
+.rectangle-button {
+  background-color: #f4f4f4;
+  color: #222222;
+  padding: 0.8rem 2.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* Section specific styles */
+.hero-section {
+  height: 650px;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../assets/hero-section.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  height: 8rem;
+}
+
+.call-to-action {
+  height: calc(650px - 8rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cta-buttons {
+  display: flex;
+  width: 90%;
+  align-items: flex-start;
+  margin: 2rem auto 1rem auto;
+}
+
+.cta-buttons .rectangle-button:first-child {
+  margin-left: 0;
+}
+
+.query-form {
+  background-color: #f4f4f4;
+  display: flex;
+  width: 90%;
+  height: 4rem;
+  align-items: center;
+}
+
+.query-form form {
+  display: flex;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.query-form form > div {
+  flex: 3;
+}
+
+.query-form form > div:last-child {
+  flex: 1;
+}
+
+.query-form form > input,
+.query-form form > select {
+  border: none;
+  background-color: transparent;
+}
+
+.query-form form > div input:focus {
+  box-shadow: none;
+}
+
+button.query-search-button {
+  padding: 1rem 1.4rem;
+  border: none;
+  background-color: #28a3a1;
+}
+
+/* Listings */
+
+section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  border-bottom: 1px solid #f4fafa;
+}
+
+.section-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.section-heading .section-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section-heading .section-subtitle {
+  width: 60%;
+  text-align: center;
+  color: #666666;
+}
+
+.listings-row {
+  margin-bottom: 1rem;
+}
+
+.listings-card {
+  height: 550px;
+  min-width: 350px;
+}
+
+.listing-image {
+  background: url("../assets/hotel-room-01.jpg");
+  height: 250px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.listings-overlay-buttons-row {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding-top: 1rem;
+  padding-right: 0.5rem;
+}
+
+.listings-overlay-button {
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  width: 100px;
+  height: 1.8rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.listings-card-body {
+  padding: 1.5rem;
+  border: 1px solid #f4f4f4;
+  border-top: none;
+}
+
+.listings-user-avatar {
+  height: 60px;
+  border-radius: 50%;
+  border: 3px #28a3a1 solid;
+  background-clip: border-box;
+  position: relative;
+  top: 170px;
+  left: 330px;
+  background-color: #28a3a1;
+}
+
+.listings-card-body .listings-card-villa-name {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.listings-card-facilities-row {
+  display: flex;
+  justify-content: space-between;
+  color: #666666;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.listings-card-facilities-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.listings-card-buttons-row {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.listings-card-buttons-row button {
+  background-color: #eaf6f6;
+  border: none;
+  color: #28a3a1;
+}
+
+.listings-card-buttons-row .price-button {
+  height: 50px;
+  flex: 2;
+}
+
+.listings-card-buttons-row .square-button {
+  font-size: 1.5rem;
+  height: 50px;
+  width: 50px;
+  flex: 1;
+}
+
+.listings-bottom-buttons-row {
+  margin-top: 3rem;
+}
+
+.view-all-button {
+  background-color: #28a3a1;
+  color: #f4f4f4;
+  border: none;
+  padding: 1rem 2rem;
+}
+
+.property-type-card {
+  background-color: #eaf6f6;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.property-type-card .property-type-name {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #28a3a1;
+  text-align: center;
+}
+
+.property-type-card.active {
+  background-color: #28a3a1;
+}
+
+.property-type-card .property-type-name.active {
+  color: #f7fcfb;
+}
+
+.listings-advantages-points {
+  height: 400px;
+}
+
+.listings-advantages-points-entry {
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-right: 1rem;
+}
+
+.listings-advantages-points-entry-image {
+  height: 64px;
+  width: 64px;
+  flex-shrink: 0;
+  background-color: #28a3a1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listings-advantages-points-entry-image img {
+  height: 30px;
+}
+
+.listings-advantages-points-entry-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #444444;
+}
+
+.listings-advantages-points-entry-explanation {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  color: #888888;
+}
+
+.listing-advantage-image {
+  background: url("../assets/hotel-room-02.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 400px;
+}
+
+.extra-background {
+  background-color: #f4fafa;
+  height: 10vh;
+}
+
+.subscription-row {
+  height: 10rem;
+  background-color: #e8f4f4;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  transform: translateY(-5rem);
+}
+
+.subscription-icon {
+  height: 64px;
+  width: 64px;
+  background-color: #c2e4e3;
+}
+
+.subscription-text {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333333;
+}
+
+.subscription-email {
+  border: none;
+  border-radius: 0;
+  padding: 0.6rem 1rem;
+}
+
+.subscription-button {
+  background-color: #28a3a1;
+  color: #f4f4f4;
+  padding: 0.5rem 1rem;
+  border-radius: 0;
+}
+
+.subscription-footer-icon-row {
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.subscription-footer-icon {
+  background-color: #eaf6f6;
+  padding: 0.8rem 1rem;
+  color: #28a3a1;
+}
+
+@media screen and (max-width: 1360px) {
+  .listings-user-avatar {
+    left: 260px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .testimony {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .cta-container {
+    width: 70%;
+  }
+
+  .cta-buttons,
+  .query-form {
+    display: none;
+  }
+
+  .listings-advantages {
+    gap: 0;
+  }
+}
